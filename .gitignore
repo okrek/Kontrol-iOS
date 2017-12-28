@@ -1,0 +1,37 @@
+## OS X files
+.DS_Store
+.DS_Store?
+.Trashes
+.Spotlight-V100
+*.swp
+
+## Xcode build files
+DerivedData/
+build/
+xcuserdata/
+
+## Xcode private settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+## Build generated
+build/
+DerivedData/
+
+## AppCode
+.idea/
+
+## Carthage
+Carthage/
+
+## Other
+Yarche/Core/R.generated.swift
+YarcheTests/Mocks/GeneratedMocks.swift
+rswift
+Yarche\.xcodeproj/project\.xcworkspace
