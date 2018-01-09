@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class  MaxLengthRule: ValidationRule<String> {
+open class MaxLengthRule: ValidationRule<String> {
     
     private let maxLength: Int
     private let message: String

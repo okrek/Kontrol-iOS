@@ -17,8 +17,6 @@
 		C653BE261FF4DCCA002FD29A /* KontrolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE251FF4DCCA002FD29A /* KontrolTests.swift */; };
 		C653BE281FF4DCCA002FD29A /* Kontrol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C653BE061FF4D616002FD29A /* Kontrol.framework */; };
 		C653BE2F1FF4DCEE002FD29A /* ComplexValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE2E1FF4DCEE002FD29A /* ComplexValidatorTests.swift */; };
-		C653BE331FF4E051002FD29A /* BlockValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE321FF4E051002FD29A /* BlockValidator.swift */; };
-		C653BE361FF4E0E6002FD29A /* BlockValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE351FF4E0E6002FD29A /* BlockValidatorTests.swift */; };
 		C653BE381FF4E6B9002FD29A /* StandartValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE371FF4E6B9002FD29A /* StandartValidator.swift */; };
 		C653BE3A1FF4E8B8002FD29A /* CompositeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE391FF4E8B8002FD29A /* CompositeValidator.swift */; };
 		C653BE3C1FF4E9E6002FD29A /* BooleanRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE3B1FF4E9E6002FD29A /* BooleanRule.swift */; };
@@ -26,6 +24,8 @@
 		C653BE411FF4EC4B002FD29A /* RegexRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE401FF4EC4B002FD29A /* RegexRuleTests.swift */; };
 		C653BE431FF4F050002FD29A /* MinLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE421FF4F050002FD29A /* MinLengthRule.swift */; };
 		C653BE451FF4F0CD002FD29A /* MaxLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE441FF4F0CD002FD29A /* MaxLengthRule.swift */; };
+		C6865F6D200491C700FFA514 /* BlockRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6865F6C200491C700FFA514 /* BlockRule.swift */; };
+		C6865F6F2004945F00FFA514 /* BlockRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6865F6E2004945F00FFA514 /* BlockRuleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,6 @@
 		C653BE251FF4DCCA002FD29A /* KontrolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontrolTests.swift; sourceTree = "<group>"; };
 		C653BE271FF4DCCA002FD29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C653BE2E1FF4DCEE002FD29A /* ComplexValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexValidatorTests.swift; sourceTree = "<group>"; };
-		C653BE321FF4E051002FD29A /* BlockValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockValidator.swift; sourceTree = "<group>"; };
-		C653BE351FF4E0E6002FD29A /* BlockValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockValidatorTests.swift; sourceTree = "<group>"; };
 		C653BE371FF4E6B9002FD29A /* StandartValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartValidator.swift; sourceTree = "<group>"; };
 		C653BE391FF4E8B8002FD29A /* CompositeValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeValidator.swift; sourceTree = "<group>"; };
 		C653BE3B1FF4E9E6002FD29A /* BooleanRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanRule.swift; sourceTree = "<group>"; };
@@ -61,6 +59,8 @@
 		C653BE401FF4EC4B002FD29A /* RegexRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexRuleTests.swift; sourceTree = "<group>"; };
 		C653BE421FF4F050002FD29A /* MinLengthRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinLengthRule.swift; sourceTree = "<group>"; };
 		C653BE441FF4F0CD002FD29A /* MaxLengthRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLengthRule.swift; sourceTree = "<group>"; };
+		C6865F6C200491C700FFA514 /* BlockRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockRule.swift; sourceTree = "<group>"; };
+		C6865F6E2004945F00FFA514 /* BlockRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockRuleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +121,7 @@
 				C653BE3D1FF4EA64002FD29A /* RegexRule.swift */,
 				C653BE421FF4F050002FD29A /* MinLengthRule.swift */,
 				C653BE441FF4F0CD002FD29A /* MaxLengthRule.swift */,
+				C6865F6C200491C700FFA514 /* BlockRule.swift */,
 			);
 			path = Rules;
 			sourceTree = "<group>";
@@ -131,7 +132,6 @@
 				C653BE131FF4D732002FD29A /* ComplexValidator.swift */,
 				C653BE1B1FF4DC46002FD29A /* PropertyValidator.swift */,
 				C653BE1D1FF4DC9A002FD29A /* Validator.swift */,
-				C653BE321FF4E051002FD29A /* BlockValidator.swift */,
 				C653BE371FF4E6B9002FD29A /* StandartValidator.swift */,
 				C653BE391FF4E8B8002FD29A /* CompositeValidator.swift */,
 			);
@@ -153,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				C653BE2E1FF4DCEE002FD29A /* ComplexValidatorTests.swift */,
-				C653BE351FF4E0E6002FD29A /* BlockValidatorTests.swift */,
 			);
 			path = Validators;
 			sourceTree = "<group>";
@@ -162,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				C653BE401FF4EC4B002FD29A /* RegexRuleTests.swift */,
+				C6865F6E2004945F00FFA514 /* BlockRuleTests.swift */,
 			);
 			path = Rules;
 			sourceTree = "<group>";
@@ -282,7 +282,6 @@
 				C653BE3C1FF4E9E6002FD29A /* BooleanRule.swift in Sources */,
 				C653BE191FF4DAAF002FD29A /* EmptyRule.swift in Sources */,
 				C653BE431FF4F050002FD29A /* MinLengthRule.swift in Sources */,
-				C653BE331FF4E051002FD29A /* BlockValidator.swift in Sources */,
 				C653BE3A1FF4E8B8002FD29A /* CompositeValidator.swift in Sources */,
 				C653BE121FF4D64A002FD29A /* ValidationResult.swift in Sources */,
 				C653BE141FF4D732002FD29A /* ComplexValidator.swift in Sources */,
@@ -290,6 +289,7 @@
 				C653BE1C1FF4DC46002FD29A /* PropertyValidator.swift in Sources */,
 				C653BE451FF4F0CD002FD29A /* MaxLengthRule.swift in Sources */,
 				C653BE3E1FF4EA64002FD29A /* RegexRule.swift in Sources */,
+				C6865F6D200491C700FFA514 /* BlockRule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,8 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C653BE361FF4E0E6002FD29A /* BlockValidatorTests.swift in Sources */,
 				C653BE411FF4EC4B002FD29A /* RegexRuleTests.swift in Sources */,
+				C6865F6F2004945F00FFA514 /* BlockRuleTests.swift in Sources */,
 				C653BE261FF4DCCA002FD29A /* KontrolTests.swift in Sources */,
 				C653BE2F1FF4DCEE002FD29A /* ComplexValidatorTests.swift in Sources */,
 			);
