@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class  StandartValidator<Input>: Validator<Input> {
+public class StandartValidator<Input>: Validator<Input> {
     
     private let rules: [ValidationRule<Input>]
     
@@ -17,7 +17,7 @@ open class  StandartValidator<Input>: Validator<Input> {
         super.init(tag: tag)
     }
     
-    open override func validate(input: Input) -> ValidationResult {
-        return rules.map { $0.check(value: input) }.first { $0.isFailure() } ?? .success
+    public override func validate(input: Input) -> ValidationResult {
+        return rules.map { $0.check(value: input) }.first { $0 != .success } ?? .success
     }
 }

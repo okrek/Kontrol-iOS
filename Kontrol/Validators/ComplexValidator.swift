@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class  ComplexValidator<Input> {
+public class  ComplexValidator<Input> {
     
     private let validators: [Validator<Input>]
     

@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class EmptyRule: ValidationRule<String> {
+public class EmptyRule: ValidationRule<String> {
     
     private let message: String
     
@@ -16,7 +16,7 @@ open class EmptyRule: ValidationRule<String> {
         self.message = message
     }
     
-    open override func check(value: String) -> ValidationResult {
+    public override func check(value: String) -> ValidationResult {
         return value.isEmpty ? .failure(message) : .success
     }
 }

@@ -9,13 +9,14 @@
 import Foundation
 
 open class  Validator<Input> {
+    
     public var tag: String?
     
     init(tag: String? = nil) {
         self.tag = tag
     }
     
-    public func validate(input: Input) -> ValidationResult  {
+    open func validate(input: Input) -> ValidationResult  {
         fatalError("validate(input:) must be overriden")
     }
 }

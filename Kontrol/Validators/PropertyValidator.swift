@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class  PropertyValidator<Root, Value>: Validator<Root> {
+public class  PropertyValidator<Root, Value>: Validator<Root> {
     
     private let keyPath: KeyPath<Root, Value>
     private let rules: [ValidationRule<Value>]
@@ -19,8 +19,8 @@ open class  PropertyValidator<Root, Value>: Validator<Root> {
         super.init(tag: tag)
     }
     
-    open override func validate(input: Root) -> ValidationResult {
+    public override func validate(input: Root) -> ValidationResult {
         let checkedValue = input[keyPath: keyPath]
-        return rules.map { $0.check(value: checkedValue) }.first { $0.isFailure() } ?? .success
+        return rules.map { $0.check(value: checkedValue) }.first { $0 != .success } ?? .success
     }
 }

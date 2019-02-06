@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class  MinLengthRule: ValidationRule<String> {
+public class MinLengthRule: ValidationRule<String> {
     
     private let minLength: Int
     private let message: String
@@ -18,7 +18,7 @@ open class  MinLengthRule: ValidationRule<String> {
         self.message = message
     }
     
-    open override func check(value: String) -> ValidationResult {
+    public override func check(value: String) -> ValidationResult {
         return value.count < minLength ? .failure(message) : .success
     }
 }

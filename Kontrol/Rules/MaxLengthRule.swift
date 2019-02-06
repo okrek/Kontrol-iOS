@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class MaxLengthRule: ValidationRule<String> {
+public class MaxLengthRule: ValidationRule<String> {
     
     private let maxLength: Int
     private let message: String
@@ -18,7 +18,7 @@ open class MaxLengthRule: ValidationRule<String> {
         self.message = message
     }
     
-    open override func check(value: String) -> ValidationResult {
+    public override func check(value: String) -> ValidationResult {
         return value.count > maxLength ? .failure(message) : .success
     }
 }

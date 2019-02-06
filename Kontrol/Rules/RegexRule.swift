@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class RegexRule: ValidationRule<String> {
+public class RegexRule: ValidationRule<String> {
     
     private let regex: NSRegularExpression
     private let message: String
@@ -18,7 +18,7 @@ open class RegexRule: ValidationRule<String> {
         self.message = message
     }
     
-    open override func check(value: String) -> ValidationResult {
+    public override func check(value: String) -> ValidationResult {
         return regex.numberOfMatches(in: value, range: NSRange(location: 0, length: value.count)) > 0 ? .success : .failure(message)
     }
 }

@@ -18,12 +18,12 @@
 		C653BE281FF4DCCA002FD29A /* Kontrol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C653BE061FF4D616002FD29A /* Kontrol.framework */; };
 		C653BE2F1FF4DCEE002FD29A /* ComplexValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE2E1FF4DCEE002FD29A /* ComplexValidatorTests.swift */; };
 		C653BE381FF4E6B9002FD29A /* StandartValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE371FF4E6B9002FD29A /* StandartValidator.swift */; };
-		C653BE3A1FF4E8B8002FD29A /* CompositeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE391FF4E8B8002FD29A /* CompositeValidator.swift */; };
 		C653BE3C1FF4E9E6002FD29A /* BooleanRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE3B1FF4E9E6002FD29A /* BooleanRule.swift */; };
 		C653BE3E1FF4EA64002FD29A /* RegexRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE3D1FF4EA64002FD29A /* RegexRule.swift */; };
 		C653BE411FF4EC4B002FD29A /* RegexRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE401FF4EC4B002FD29A /* RegexRuleTests.swift */; };
 		C653BE431FF4F050002FD29A /* MinLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE421FF4F050002FD29A /* MinLengthRule.swift */; };
 		C653BE451FF4F0CD002FD29A /* MaxLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE441FF4F0CD002FD29A /* MaxLengthRule.swift */; };
+		C682D5B0220B2A1B00970136 /* CompositeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682D5AF220B2A1B00970136 /* CompositeRule.swift */; };
 		C6865F6D200491C700FFA514 /* BlockRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6865F6C200491C700FFA514 /* BlockRule.swift */; };
 		C6865F6F2004945F00FFA514 /* BlockRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6865F6E2004945F00FFA514 /* BlockRuleTests.swift */; };
 /* End PBXBuildFile section */
@@ -53,12 +53,12 @@
 		C653BE271FF4DCCA002FD29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C653BE2E1FF4DCEE002FD29A /* ComplexValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexValidatorTests.swift; sourceTree = "<group>"; };
 		C653BE371FF4E6B9002FD29A /* StandartValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartValidator.swift; sourceTree = "<group>"; };
-		C653BE391FF4E8B8002FD29A /* CompositeValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeValidator.swift; sourceTree = "<group>"; };
 		C653BE3B1FF4E9E6002FD29A /* BooleanRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanRule.swift; sourceTree = "<group>"; };
 		C653BE3D1FF4EA64002FD29A /* RegexRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexRule.swift; sourceTree = "<group>"; };
 		C653BE401FF4EC4B002FD29A /* RegexRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexRuleTests.swift; sourceTree = "<group>"; };
 		C653BE421FF4F050002FD29A /* MinLengthRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinLengthRule.swift; sourceTree = "<group>"; };
 		C653BE441FF4F0CD002FD29A /* MaxLengthRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLengthRule.swift; sourceTree = "<group>"; };
+		C682D5AF220B2A1B00970136 /* CompositeRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeRule.swift; sourceTree = "<group>"; };
 		C6865F6C200491C700FFA514 /* BlockRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockRule.swift; sourceTree = "<group>"; };
 		C6865F6E2004945F00FFA514 /* BlockRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockRuleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +122,7 @@
 				C653BE421FF4F050002FD29A /* MinLengthRule.swift */,
 				C653BE441FF4F0CD002FD29A /* MaxLengthRule.swift */,
 				C6865F6C200491C700FFA514 /* BlockRule.swift */,
+				C682D5AF220B2A1B00970136 /* CompositeRule.swift */,
 			);
 			path = Rules;
 			sourceTree = "<group>";
@@ -133,7 +134,6 @@
 				C653BE1B1FF4DC46002FD29A /* PropertyValidator.swift */,
 				C653BE1D1FF4DC9A002FD29A /* Validator.swift */,
 				C653BE371FF4E6B9002FD29A /* StandartValidator.swift */,
-				C653BE391FF4E8B8002FD29A /* CompositeValidator.swift */,
 			);
 			path = Validators;
 			sourceTree = "<group>";
@@ -282,7 +282,7 @@
 				C653BE3C1FF4E9E6002FD29A /* BooleanRule.swift in Sources */,
 				C653BE191FF4DAAF002FD29A /* EmptyRule.swift in Sources */,
 				C653BE431FF4F050002FD29A /* MinLengthRule.swift in Sources */,
-				C653BE3A1FF4E8B8002FD29A /* CompositeValidator.swift in Sources */,
+				C682D5B0220B2A1B00970136 /* CompositeRule.swift in Sources */,
 				C653BE121FF4D64A002FD29A /* ValidationResult.swift in Sources */,
 				C653BE141FF4D732002FD29A /* ComplexValidator.swift in Sources */,
 				C653BE1E1FF4DC9A002FD29A /* Validator.swift in Sources */,
@@ -446,7 +446,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -468,7 +468,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.okrek.Kontrol;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -16,7 +16,7 @@ public class BlockRule<Input>: ValidationRule<Input> {
         self.validationBlock = block
     }
     
-    open override func check(value: Input) -> ValidationResult {
+    public override func check(value: Input) -> ValidationResult {
         return validationBlock(value)
     }
 }

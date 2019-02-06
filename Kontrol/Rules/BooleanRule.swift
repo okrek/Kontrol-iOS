@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class  BoolRule: ValidationRule<Bool> {
+public class BoolRule: ValidationRule<Bool> {
     
     private let message: String
     
@@ -16,7 +16,7 @@ open class  BoolRule: ValidationRule<Bool> {
         self.message = message
     }
     
-    open override func check(value: Bool) -> ValidationResult {
+    public override func check(value: Bool) -> ValidationResult {
         return value ? .success : .failure(message)
     }
 }
