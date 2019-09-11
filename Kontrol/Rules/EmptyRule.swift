@@ -9,13 +9,13 @@
 import Foundation
 
 public class EmptyRule: ValidationRule<String> {
-    
+
     private let message: String
-    
+
     public init(message: String) {
         self.message = message
     }
-    
+
     public override func check(value: String) -> ValidationResult {
         return value.isEmpty ? .failure(message) : .success
     }

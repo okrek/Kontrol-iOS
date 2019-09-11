@@ -8,16 +8,16 @@
 
 import Foundation
 
-public class StandartValidator<Input>: Validator<Input> {
-    
+public class SimpleValidator<Input>: Validator<Input> {
+
     private let rules: [ValidationRule<Input>]
-    
+
     public init(tag: String? = nil, rules: [ValidationRule<Input>]) {
         self.rules = rules
         super.init(tag: tag)
     }
-    
+
     public override func validate(input: Input) -> ValidationResult {
-        return rules.map { $0.check(value: input) }.first { $0 != .success } ?? .success
+        return rules.map { $0.check(value: input) }.first { $0.isFailure() } ?? .success
     }
 }

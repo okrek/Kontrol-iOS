@@ -8,15 +8,15 @@
 
 import Foundation
 
-open class  Validator<Input> {
+open class Validator<Input> {
     
-    public var tag: String?
+    public let tag: String?
     
-    init(tag: String? = nil) {
+    public init(tag: String? = nil) {
         self.tag = tag
     }
     
-    open func validate(input: Input) -> ValidationResult  {
+    open func validate(input: Input) -> ValidationResult {
         fatalError("validate(input:) must be overriden")
     }
 }

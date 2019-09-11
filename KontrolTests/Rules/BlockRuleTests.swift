@@ -16,19 +16,17 @@ class BlockRuleTests: XCTestCase {
         let errorMessage = "Text is doesn't match regular expression"
         let rule = BlockRule<String> { _ in .failure(errorMessage) }
         let result = rule.check(value: "Dirge")
-        
+
         guard case .failure(let message) = result, message == errorMessage else {
             XCTFail()
             return
         }
     }
-    
+
     func testWhenBlockReturnsSuccess_shouldReturnSuccess() {
         let rule = BlockRule<String> { _ in .success }
         let result = rule.check(value: "12345")
-        
+
         XCTAssertTrue(result.isSuccess())
     }
 }
-
-

@@ -9,15 +9,15 @@
 import Foundation
 
 public class MinLengthRule: ValidationRule<String> {
-    
+
     private let minLength: Int
     private let message: String
-    
+
     public init(minLength: Int, message: String) {
         self.minLength = minLength
         self.message = message
     }
-    
+
     public override func check(value: String) -> ValidationResult {
         return value.count < minLength ? .failure(message) : .success
     }

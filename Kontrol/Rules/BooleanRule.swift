@@ -9,13 +9,13 @@
 import Foundation
 
 public class BoolRule: ValidationRule<Bool> {
-    
+
     private let message: String
-    
+
     public init(message: String) {
         self.message = message
     }
-    
+
     public override func check(value: Bool) -> ValidationResult {
         return value ? .success : .failure(message)
     }
