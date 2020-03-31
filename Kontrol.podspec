@@ -2,11 +2,11 @@
 
 Pod::Spec.new do |s|
   s.name         = "Kontrol"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Form validation library"
   s.description  = <<-DESC
 			Kontrol
-  			Form validation librar
+  			Form validation library
                    DESC
 
   s.homepage     = "https://github.com/okrek/Kontrol-iOS"
@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.source       = { :git => "https://github.com/okrek/Kontrol-iOS.git", :tag => "#{s.version}" }
   s.source_files  = 'Kontrol/**/*.{swift,h,m}'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 end
