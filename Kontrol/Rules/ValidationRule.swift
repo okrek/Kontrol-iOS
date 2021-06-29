@@ -9,10 +9,7 @@
 import Foundation
 
 open class ValidationRule<Input> {
-    
-    public init() { }
-    
-    open func check(value: Input) -> ValidationResult {
+    public func check(value: Input) -> ValidationResult {
         fatalError("Must be overriden")
     }
 }

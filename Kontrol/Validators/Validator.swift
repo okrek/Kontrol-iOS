@@ -8,15 +8,9 @@
 
 import Foundation
 
-open class Validator<Input> {
+protocol Validator {
+    associatedtype Input
     
-    public let tag: String?
-    
-    public init(tag: String? = nil) {
-        self.tag = tag
-    }
-    
-    open func validate(input: Input) -> ValidationResult {
-        fatalError("validate(input:) must be overriden")
-    }
+    var rules: [ValidationRule<Input>] { get}
+    func validate(input: Input) -> ValidationResult
 }

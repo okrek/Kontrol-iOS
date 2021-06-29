@@ -7,23 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C60848FF2681F4B000D6EDEC /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60848FE2681F4B000D6EDEC /* Validatable.swift */; };
+		C60849012682033400D6EDEC /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60849002682033400D6EDEC /* Temp.swift */; };
 		C653BE0B1FF4D616002FD29A /* Kontrol.h in Headers */ = {isa = PBXBuildFile; fileRef = C653BE091FF4D616002FD29A /* Kontrol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C653BE121FF4D64A002FD29A /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE111FF4D64A002FD29A /* ValidationResult.swift */; };
-		C653BE141FF4D732002FD29A /* ComplexValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE131FF4D732002FD29A /* ComplexValidator.swift */; };
 		C653BE171FF4DA7B002FD29A /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE161FF4DA7B002FD29A /* ValidationRule.swift */; };
 		C653BE191FF4DAAF002FD29A /* EmptyRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE181FF4DAAF002FD29A /* EmptyRule.swift */; };
-		C653BE1C1FF4DC46002FD29A /* PropertyValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE1B1FF4DC46002FD29A /* PropertyValidator.swift */; };
 		C653BE1E1FF4DC9A002FD29A /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE1D1FF4DC9A002FD29A /* Validator.swift */; };
 		C653BE261FF4DCCA002FD29A /* KontrolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE251FF4DCCA002FD29A /* KontrolTests.swift */; };
 		C653BE281FF4DCCA002FD29A /* Kontrol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C653BE061FF4D616002FD29A /* Kontrol.framework */; };
-		C653BE2F1FF4DCEE002FD29A /* ComplexValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE2E1FF4DCEE002FD29A /* ComplexValidatorTests.swift */; };
-		C653BE381FF4E6B9002FD29A /* SimpleValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE371FF4E6B9002FD29A /* SimpleValidator.swift */; };
+		C653BE381FF4E6B9002FD29A /* ValidationStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE371FF4E6B9002FD29A /* ValidationStrategy.swift */; };
 		C653BE3C1FF4E9E6002FD29A /* BooleanRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE3B1FF4E9E6002FD29A /* BooleanRule.swift */; };
 		C653BE3E1FF4EA64002FD29A /* RegexRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE3D1FF4EA64002FD29A /* RegexRule.swift */; };
 		C653BE411FF4EC4B002FD29A /* RegexRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE401FF4EC4B002FD29A /* RegexRuleTests.swift */; };
 		C653BE431FF4F050002FD29A /* MinLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE421FF4F050002FD29A /* MinLengthRule.swift */; };
 		C653BE451FF4F0CD002FD29A /* MaxLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653BE441FF4F0CD002FD29A /* MaxLengthRule.swift */; };
-		C682D5B0220B2A1B00970136 /* CompositeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682D5AF220B2A1B00970136 /* CompositeRule.swift */; };
 		C6865F6D200491C700FFA514 /* BlockRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6865F6C200491C700FFA514 /* BlockRule.swift */; };
 		C6865F6F2004945F00FFA514 /* BlockRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6865F6E2004945F00FFA514 /* BlockRuleTests.swift */; };
 /* End PBXBuildFile section */
@@ -39,27 +37,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C60848FE2681F4B000D6EDEC /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
+		C60849002682033400D6EDEC /* Temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
 		C653BE061FF4D616002FD29A /* Kontrol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kontrol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C653BE091FF4D616002FD29A /* Kontrol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kontrol.h; sourceTree = "<group>"; };
 		C653BE0A1FF4D616002FD29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C653BE111FF4D64A002FD29A /* ValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
-		C653BE131FF4D732002FD29A /* ComplexValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexValidator.swift; sourceTree = "<group>"; };
 		C653BE161FF4DA7B002FD29A /* ValidationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationRule.swift; sourceTree = "<group>"; };
 		C653BE181FF4DAAF002FD29A /* EmptyRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyRule.swift; sourceTree = "<group>"; };
-		C653BE1B1FF4DC46002FD29A /* PropertyValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyValidator.swift; sourceTree = "<group>"; };
 		C653BE1D1FF4DC9A002FD29A /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		C653BE231FF4DCCA002FD29A /* KontrolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KontrolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C653BE251FF4DCCA002FD29A /* KontrolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontrolTests.swift; sourceTree = "<group>"; };
 		C653BE271FF4DCCA002FD29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C653BE2E1FF4DCEE002FD29A /* ComplexValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexValidatorTests.swift; sourceTree = "<group>"; };
-		C653BE371FF4E6B9002FD29A /* SimpleValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidator.swift; sourceTree = "<group>"; };
-		C653BE391FF4E8B8002FD29A /* CompositeValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeValidator.swift; sourceTree = "<group>"; };
+		C653BE371FF4E6B9002FD29A /* ValidationStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationStrategy.swift; sourceTree = "<group>"; };
 		C653BE3B1FF4E9E6002FD29A /* BooleanRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanRule.swift; sourceTree = "<group>"; };
 		C653BE3D1FF4EA64002FD29A /* RegexRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexRule.swift; sourceTree = "<group>"; };
 		C653BE401FF4EC4B002FD29A /* RegexRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexRuleTests.swift; sourceTree = "<group>"; };
 		C653BE421FF4F050002FD29A /* MinLengthRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinLengthRule.swift; sourceTree = "<group>"; };
 		C653BE441FF4F0CD002FD29A /* MaxLengthRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLengthRule.swift; sourceTree = "<group>"; };
-		C682D5AF220B2A1B00970136 /* CompositeRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeRule.swift; sourceTree = "<group>"; };
 		C6865F6C200491C700FFA514 /* BlockRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockRule.swift; sourceTree = "<group>"; };
 		C6865F6E2004945F00FFA514 /* BlockRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockRuleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +104,7 @@
 				C653BE111FF4D64A002FD29A /* ValidationResult.swift */,
 				C653BE091FF4D616002FD29A /* Kontrol.h */,
 				C653BE0A1FF4D616002FD29A /* Info.plist */,
+				C60848FE2681F4B000D6EDEC /* Validatable.swift */,
 			);
 			path = Kontrol;
 			sourceTree = "<group>";
@@ -123,7 +119,6 @@
 				C653BE421FF4F050002FD29A /* MinLengthRule.swift */,
 				C653BE441FF4F0CD002FD29A /* MaxLengthRule.swift */,
 				C6865F6C200491C700FFA514 /* BlockRule.swift */,
-				C682D5AF220B2A1B00970136 /* CompositeRule.swift */,
 			);
 			path = Rules;
 			sourceTree = "<group>";
@@ -131,11 +126,8 @@
 		C653BE1A1FF4DC30002FD29A /* Validators */ = {
 			isa = PBXGroup;
 			children = (
-				C653BE131FF4D732002FD29A /* ComplexValidator.swift */,
-				C653BE1B1FF4DC46002FD29A /* PropertyValidator.swift */,
 				C653BE1D1FF4DC9A002FD29A /* Validator.swift */,
-				C653BE371FF4E6B9002FD29A /* SimpleValidator.swift */,
-				C653BE391FF4E8B8002FD29A /* CompositeValidator.swift */,
+				C653BE371FF4E6B9002FD29A /* ValidationStrategy.swift */,
 			);
 			path = Validators;
 			sourceTree = "<group>";
@@ -154,7 +146,7 @@
 		C653BE341FF4E0D5002FD29A /* Validators */ = {
 			isa = PBXGroup;
 			children = (
-				C653BE2E1FF4DCEE002FD29A /* ComplexValidatorTests.swift */,
+				C60849002682033400D6EDEC /* Temp.swift */,
 			);
 			path = Validators;
 			sourceTree = "<group>";
@@ -225,7 +217,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Okrek;
 				TargetAttributes = {
 					C653BE051FF4D616002FD29A = {
@@ -235,7 +227,6 @@
 					};
 					C653BE221FF4DCCA002FD29A = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1130;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -281,18 +272,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C653BE171FF4DA7B002FD29A /* ValidationRule.swift in Sources */,
-				C653BE381FF4E6B9002FD29A /* SimpleValidator.swift in Sources */,
+				C653BE381FF4E6B9002FD29A /* ValidationStrategy.swift in Sources */,
 				C653BE3C1FF4E9E6002FD29A /* BooleanRule.swift in Sources */,
 				C653BE191FF4DAAF002FD29A /* EmptyRule.swift in Sources */,
 				C653BE431FF4F050002FD29A /* MinLengthRule.swift in Sources */,
-				C682D5B0220B2A1B00970136 /* CompositeRule.swift in Sources */,
 				C653BE121FF4D64A002FD29A /* ValidationResult.swift in Sources */,
-				C653BE141FF4D732002FD29A /* ComplexValidator.swift in Sources */,
 				C653BE1E1FF4DC9A002FD29A /* Validator.swift in Sources */,
-				C653BE1C1FF4DC46002FD29A /* PropertyValidator.swift in Sources */,
 				C653BE451FF4F0CD002FD29A /* MaxLengthRule.swift in Sources */,
 				C653BE3E1FF4EA64002FD29A /* RegexRule.swift in Sources */,
 				C6865F6D200491C700FFA514 /* BlockRule.swift in Sources */,
+				C60848FF2681F4B000D6EDEC /* Validatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,8 +291,8 @@
 			files = (
 				C653BE411FF4EC4B002FD29A /* RegexRuleTests.swift in Sources */,
 				C6865F6F2004945F00FFA514 /* BlockRuleTests.swift in Sources */,
+				C60849012682033400D6EDEC /* Temp.swift in Sources */,
 				C653BE261FF4DCCA002FD29A /* KontrolTests.swift in Sources */,
-				C653BE2F1FF4DCEE002FD29A /* ComplexValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +321,6 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -340,7 +328,6 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -369,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -394,7 +381,6 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -402,7 +388,6 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -425,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -453,7 +438,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -475,7 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.okrek.Kontrol;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -488,7 +473,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.okrek.KontrolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -501,7 +486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.okrek.KontrolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

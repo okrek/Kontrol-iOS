@@ -9,14 +9,14 @@
 import Foundation
 
 public class BlockRule<Input>: ValidationRule<Input> {
-
+    
     private let validationBlock: (Input) -> ValidationResult
-
+    
     public init(block: @escaping (Input) -> ValidationResult) {
         self.validationBlock = block
     }
-
-    public override func check(value: Input) -> ValidationResult {
+    
+    open override func check(value: Input) -> ValidationResult {
         return validationBlock(value)
     }
 }
