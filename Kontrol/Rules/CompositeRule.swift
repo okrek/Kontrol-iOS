@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class CompositeRule<Input>: ValidationRule<Input> {
+open class CompositeRule<Input>: ValidationRule<Input> {
     
     let rules: [ValidationRule<Input>]
     let message: String

@@ -60,19 +60,3 @@ struct PropertyValidator<Input>: ValidatableField {
     }
     
 }
-
-class Test: ValidatableForm {
-    
-    @PropertyValidator(tag: "email", rules: [MinLengthRule(minLength: 7, message: "email incorrect")])
-    var value: String = "asdf"
-    
-    @PropertyValidator(tag: "name", rules: [MinLengthRule(minLength: 2, message: "Fuck")])
-    var name: String = "asdf"
-    
-    @PropertyValidator(tag: "phone", rules: [MinLengthRule(minLength: 7, message: "phone incorrect")])
-    var phone: String = "asdf"
-    
-    func validatableFields() -> [ValidatableField] {
-        return [_value, _name, _phone]
-    }
-}

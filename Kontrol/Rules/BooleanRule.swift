@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class  BoolRule: ValidationRule<Bool> {
+open class BoolRule: ValidationRule<Bool> {
     
     private let message: String
     

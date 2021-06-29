@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class BlockRule<Input>: ValidationRule<Input> {
+open class BlockRule<Input>: ValidationRule<Input> {
     
     private let validationBlock: (Input) -> ValidationResult
     

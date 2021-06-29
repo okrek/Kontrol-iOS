@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class  MinLengthRule: ValidationRule<String> {
+open class MinLengthRule: ValidationRule<String> {
     
     private let minLength: Int
     private let message: String
