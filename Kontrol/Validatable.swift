@@ -9,18 +9,18 @@
 import Foundation
 
 
-protocol ValidatableField {
+public protocol ValidatableField {
     var tag: String? { get }
     func validate() -> ValidationResult
 }
 
-protocol ValidatableForm {
+public protocol ValidatableForm {
     
     func validatableFields() -> [ValidatableField]
     func validate() -> [String: String]
 }
 
-extension ValidatableForm {
+public extension ValidatableForm {
     
     func validate() -> [String: String] {
         var errors: [String: String] = [:]
@@ -37,15 +37,15 @@ extension ValidatableForm {
 
 
 @propertyWrapper
-struct PropertyValidator<Input>: ValidatableField {
+public struct PropertyValidator<Input>: ValidatableField {
     
-    var wrappedValue: Input
-    let tag: String?
+    public var wrappedValue: Input
+    public let tag: String?
     
     private let rules: [ValidationRule<Input>]
     private let strategy: ValidationStrategy
         
-    init(wrappedValue: Input,
+    public init(wrappedValue: Input,
          tag: String? = nil,
          rules: [ValidationRule<Input>],
          strategy: ValidationStrategy = DefaultValidationStrategy()) {
@@ -55,7 +55,7 @@ struct PropertyValidator<Input>: ValidatableField {
         self.tag = tag
     }
     
-    func validate() -> ValidationResult {
+    public func validate() -> ValidationResult {
         strategy.execute(input: wrappedValue, rules: rules)
     }
     

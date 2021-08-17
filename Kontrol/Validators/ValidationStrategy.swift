@@ -8,20 +8,24 @@
 
 import Foundation
 
-protocol ValidationStrategy {
+public protocol ValidationStrategy {
     func execute<Input>(input: Input, rules: [ValidationRule<Input>]) -> ValidationResult
 }
 
-struct DefaultValidationStrategy: ValidationStrategy {
+public struct DefaultValidationStrategy: ValidationStrategy {
     
-    func execute<Input>(input: Input, rules: [ValidationRule<Input>]) -> ValidationResult{
+    public init() { }
+    
+    public func execute<Input>(input: Input, rules: [ValidationRule<Input>]) -> ValidationResult {
         return rules.map { $0.check(value: input) }.first { $0.isFailure() } ?? .success
     }
 }
 
-struct AnySatisfyValidationStrategy: ValidationStrategy {
+public struct AnySatisfyValidationStrategy: ValidationStrategy {
     
-    func execute<Input>(input: Input, rules: [ValidationRule<Input>]) -> ValidationResult {
+    public init() { }
+    
+    public func execute<Input>(input: Input, rules: [ValidationRule<Input>]) -> ValidationResult {
         if rules.first(where: { $0.check(value: input).isFailure() == false }) == nil {
             return .success
         }
